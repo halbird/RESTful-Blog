@@ -1,0 +1,21 @@
+i.icon {
+    font-size: 1.5em;
+}
+.container.main {
+    margin-top: 5.0em;
+}
+#delete {
+    display: inline;
+}
+.readMore {
+    padding-left: 0.5em;
+}
+.showImage {
+    max-height: 30em;
+}
+.description {
+    padding-bottom: 1em;
+}
+.content {
+    padding-top: 1.5em;
+}
