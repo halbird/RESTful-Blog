@@ -9,7 +9,7 @@ var express = require("express"),
 // App configuration    
 mongoose.set("useUnifiedTopology", true);
 mongoose.set("useFindAndModify", false)
-mongoose.connect("mongodb://heroku_rqlnh14s:bu5gn5hhost4p5k5amdnv27ba@ds351628.mlab.com:51628/heroku_rqlnh14s", {useNewUrlParser: true});
+mongoose.connect("mongodb://localhost/restfulBlog", {useNewUrlParser: true});
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
@@ -126,11 +126,6 @@ app.delete("/blogs/:id", function(req, res){
     });
 });
 
-
-
-
-
-
-app.listen(process.env.PORT, function(){
+app.listen(3000, function(){
     console.log("blog server started");
 });
